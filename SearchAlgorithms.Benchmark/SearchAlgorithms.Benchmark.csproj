@@ -5,4 +5,10 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SearchAlgorithms.ArrayGenerators\SortAlgorithms.ArrayGenerators.csproj" />
+      <ProjectReference Include="..\SearchAlgorithms.PerformanceLogger\SearchAlgorithms.PerformanceLogger.csproj" />
+      <ProjectReference Include="..\SearchAlgorithms\SearchAlgorithms.csproj" />
+    </ItemGroup>
+
 </Project>

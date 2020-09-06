@@ -6,7 +6,21 @@ namespace SearchAlgorithms.SearchAlgorithms
     {
         public bool Contains(int[] array, int searchValue)
         {
-            throw new System.NotImplementedException();
+            var min = 0;
+            var max = array.Length - 1;
+
+            while (min <= max)
+            {
+                var mid = (min + max) / 2;
+
+                if (searchValue == array[mid]) return true;
+
+                if (searchValue < array[mid]) max = mid - 1;
+
+                else min = mid + 1;
+            }
+
+            return false;
         }
     }
 }
