@@ -4,14 +4,15 @@ namespace SearchAlgorithms.SearchAlgorithms
 {
     public class ImprovedLinearSearch: ISearchAlgorithm
     {
-        public int ElementIndex(int[] array, int searchValue)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public bool Contains(int[] array, int searchValue)
         {
-            throw new System.NotImplementedException();
+            foreach (var t in array)
+            {
+                if (t == searchValue)
+                    return true;
+            }
+
+            return false;
         }
     }
 }
