@@ -2,6 +2,6 @@
 {
     public interface ISearchAlgorithm
     {
-        int ElementIndex(int[] array, int searchValue);
+        bool Contains(int[] array, int searchValue);
     }
 }

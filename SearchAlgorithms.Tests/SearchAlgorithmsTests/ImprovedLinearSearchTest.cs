@@ -12,8 +12,8 @@ namespace SearchAlgorithms.Tests.SearchAlgorithmsTests
         {
             var collection = new[] {1, 6, 7, 4, 9, 23, 77, 13, 24, 16, 22, 35};
             ISearchAlgorithm searchAlgorithm = null;
-            searchAlgorithm.ElementIndex(collection, 21).Should().Be(-1);
-            searchAlgorithm.ElementIndex(collection, 35).Should().Be(11);
+            searchAlgorithm.Contains(collection, 21).Should().BeFalse();
+            searchAlgorithm.Contains(collection, 35).Should().BeTrue();
         }
     }
 }

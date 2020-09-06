@@ -10,7 +10,7 @@ namespace SearchAlgorithms.PerformanceLogger.Timer
         public static TimeSpan Measure(ISearchAlgorithm sortAlgorithm, IArrayGenerator arrayGenerator, int value)
         {
             var array = arrayGenerator.GetArray;
-            Action act = () => sortAlgorithm.ElementIndex(array, value);
+            Action act = () => sortAlgorithm.Contains(array, value);
             var stopwatch = new Stopwatch();
             stopwatch.Start();
             act.Invoke();

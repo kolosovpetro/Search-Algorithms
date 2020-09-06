@@ -8,5 +8,10 @@ namespace SearchAlgorithms.SearchAlgorithms
         {
             throw new System.NotImplementedException();
         }
+
+        public bool Contains(int[] array, int searchValue)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
